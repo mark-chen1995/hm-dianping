@@ -1,0 +1,58 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: hmdp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://110.41.23.87:3306/hmdp?useSSL=false&serverTimezone=UTC
+    username: root
+    password: Cy+150497
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      max-active: 10
+      min-idle: 5
+      initial-size: 3
+      filters: stat,wall filters
+      filter:
+        stat: #
+          slow-sql-millis: 1000
+          logSlowSql: true
+          enabled: true
+        wall: #WallFilter
+          enabled: true
+          config:
+            drop-table-allow: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /monitor
+  redis:
+    host: 110.41.23.87
+    port: 6379
+    password: Cy+150497
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 10
+        min-idle: 1
+        time-between-eviction-runs: 10s
+  jackson:
+    default-property-inclusion: non_null # JSON处理时忽略非空字段
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: spring:session
+  main:
+    allow-bean-definition-overriding: true
+mybatis-plus:
+  type-aliases-package: com.hmdp.entity # 别名扫描包
+logging:
+  level:
+    com.hmdp: debug
+authenticationFilter:
+  whiteList: /login.html,/index,/shop-type/**,/blog/hot,/user/code,/user/login
+schedule:
+  task:
+    cron-expression:
+      e1: "0/5 * * * * *"
