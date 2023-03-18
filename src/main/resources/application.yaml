@@ -11,7 +11,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       max-active: 15
-      min-idle: 5
+      min-idle: 6
       initial-size: 3
       filters: stat,wall filters
       filter:
