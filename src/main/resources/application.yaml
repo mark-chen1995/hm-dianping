@@ -1,8 +1,8 @@
 server:
-  port: 8081
+  port: 8080
 spring:
   application:
-    name: hmdp
+    name: haima-dianping
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://110.41.23.87:3306/hmdp?useSSL=false&serverTimezone=UTC
@@ -10,8 +10,8 @@ spring:
     password: Cy+150497
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      max-active: 10
-      min-idle: 5
+      max-active: 15
+      min-idle: 6
       initial-size: 3
       filters: stat,wall filters
       filter:
