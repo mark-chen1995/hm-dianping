@@ -26,6 +26,6 @@ public class RedisConstants {
      * 无用的方法，用来测试git
      */
     public static void m1(){
-        System.out.println("没有的方法");
+        System.out.println("方法");
     }
 }
