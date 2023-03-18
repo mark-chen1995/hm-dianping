@@ -21,4 +21,11 @@ public class RedisConstants {
     public static final String SHOP_GEO_KEY = "shop:geo:";
     public static final String USER_SIGN_KEY = "sign:";
     public static final String CODE_PREFIX = "code:";
+
+    /**
+     * 无用的方法，用来测试git
+     */
+    public static void m1(){
+
+    }
 }
