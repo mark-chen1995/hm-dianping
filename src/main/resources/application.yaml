@@ -10,7 +10,7 @@ spring:
     password: Cy+150497
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
-      max-active: 10
+      max-active: 15
       min-idle: 5
       initial-size: 3
       filters: stat,wall filters
