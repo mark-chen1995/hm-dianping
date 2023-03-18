@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: hmdp
+    name: haima-dianping
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://110.41.23.87:3306/hmdp?useSSL=false&serverTimezone=UTC
