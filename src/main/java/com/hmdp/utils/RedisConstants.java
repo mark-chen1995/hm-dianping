@@ -23,6 +23,7 @@ public class RedisConstants {
     public static final String CODE_PREFIX = "code:";
     // add new line
     // add other line
+    // new line
     /**
      * 无用的方法，用来测试git
      */
