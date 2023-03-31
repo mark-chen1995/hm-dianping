@@ -20,8 +20,8 @@ public class RedisConstants {
     public static final String FEED_KEY = "feed:";
     public static final String SHOP_GEO_KEY = "shop:geo:";
     public static final String USER_SIGN_KEY = "sign:";
-    public static final String CODE_PREFIX = "code:";
-    // add other line
+    // public static final String CODE_PREFIX = "code:";
+    // add new line
     /**
      * 无用的方法，用来测试git
      */
